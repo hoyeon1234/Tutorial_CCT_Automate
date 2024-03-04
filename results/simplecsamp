@@ -1,0 +1,60 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {}
+V {}
+S {}
+E {}
+N -100 -20 -100 10 {
+lab=#net1}
+N -100 -20 -40 -20 {
+lab=#net1}
+N 0 -80 0 -50 {
+lab=#net2}
+N 0 -80 120 -80 {
+lab=#net2}
+N 120 -80 120 10 {
+lab=#net2}
+N 0 10 0 80 {
+lab=GND}
+N -100 70 -100 80 {
+lab=GND}
+N -100 80 0 80 {
+lab=GND}
+N 0 80 130 80 {
+lab=GND}
+N 120 70 130 80 {
+lab=GND}
+N 0 -20 20 -20 {
+lab=GND}
+N 20 -20 20 10 {
+lab=GND}
+N -0 10 20 10 {
+lab=GND}
+C {sky130_fd_pr/nfet_01v8.sym} -20 -20 0 0 {name=M1
+L=0.15
+W=1
+nf=1 
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {devices/vsource.sym} -100 40 0 0 {name=V3 value=0 savecurrent=false}
+C {devices/vsource.sym} 120 40 0 0 {name=V4 value=0.9 savecurrent=false}
+C {devices/gnd.sym} 0 80 0 0 {name=l1 lab=GND}
+C {devices/code.sym} -440 60 0 0 {name=s1 only_toplevel=false value="
+
+.lib /home/hoyeon/open_pdks/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+.control
+	dc V3 0 3 0.01
+.endc
+
+.save all
+"}
