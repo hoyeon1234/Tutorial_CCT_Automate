@@ -16,8 +16,9 @@ V4 net2 GND 0.9
 .dc V3 0 3 0.01
 
 .control
+set filetype=ascii
 run
-write /home/hoyeon/Desktop/ciropt/results/result.csv
+write /home/hoyeon/Desktop/CCT_Automate_Tutorial/results/result.csv
 .endc
 
 **** end user architecture code
