@@ -1,5 +1,5 @@
 # Tutorial for Automating circuit.
-![](./images/Lab_logo.png)
+![](./images/Lab_logo.png)  
 한양대학교 회로설계 자동화 프로젝트를 위한 Tutorial repository 입니다.  
 반드시 **아래를 읽어주시고 진행**해주세요!! :blush:감사합니다.:blush:
 
