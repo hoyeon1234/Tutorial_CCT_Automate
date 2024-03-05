@@ -3,7 +3,7 @@
 반드시 **아래를 읽어주시고 진행**해주세요!! :blush:감사합니다.:blush:
 
 # Manual
-- [Netlist Manual](./rule/netlist_manual.md)
+- [Netlist Manual](./manual/netlist_manual.md)
 - 
 # Version
 v0 - (2024/03/04) : 초기 commit  
