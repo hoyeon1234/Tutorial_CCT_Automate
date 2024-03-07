@@ -4,8 +4,9 @@
 반드시 **아래를 읽어주시고 진행**해주세요!! :blush:감사합니다.:blush:
 
 # Manual
-- [Netlist Manual](./manual/netlist_manual.md)
-- 
+1. [Starting Automation!](./manual/Starting_Automation.md)
+2. [Manual for building netlists](./manual/netlist_manual.md)
+3. 
 # Version
 v0 - (2024/03/04) : 초기 commit  
 v0.1 - (2024/03/05) : simplecsam_modified.spice에서 write command가 바이너리로 저장되는 버그 수정, README.md 수정, netlist manual 수정
